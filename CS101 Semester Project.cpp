@@ -162,9 +162,3 @@ int main(){
 	
 	return 0;
 }
-
-//Module :seating system
-//getch(); then call function
-//learn file
-//areej and aleena module
-//learn how to centralize and change control screen
