@@ -19,7 +19,7 @@ void randommovie();
 void randomaddsdeal();
 
 void randomaddsdeal(){
-string randomaddsdeal[]{"Coming Soon!The Unbreakable Boy!","Snack Combo Large Popcorn&Drink for just $10!","Join VIP! Earn points, get rewards!","Free birthday ticket. Celebrate with us!","Matinee specials. Discounted tickets all day!",
+string randomaddsdeal[]={"Coming Soon!The Unbreakable Boy!","Snack Combo Large Popcorn&Drink for just $10!","Join VIP! Earn points, get rewards!","Free birthday ticket. Celebrate with us!","Matinee specials. Discounted tickets all day!",
 "Special Screening!One night only IMAX screening!","Prepare for scares.THE CONJURING Only in theaters!","Fun for all ages!Kung Fu Panda 4 is now showing!","Story of love&loss.The Shawshank Redemption watch now!","The future is here.INCEPTION!","Watch your favorite movies in comfort!",
 "Popcorn combo deal! Perfect for movie night!","Get your tickets early and save 20%!","Unlimited movies for $19.99/month!","VIP seats available. Upgrade for comfort!","Get your tickets today, save more!","Family pack: Enjoy movies together, discounted!","Earn points with every movie ticket purchase!","Big screen, big savings on tickets!",};
 int size=sizeof(randomaddsdeal)/sizeof(randomaddsdeal[0]);
@@ -38,7 +38,7 @@ void randommovie(){
   char A;
     do{
 	
-    string randommovie[]{
+    string randommovie[]={
 	"\t\tThe Shawshank Redemption  \t\t\n GENRE :DRAMA \t\t\n TIMING :8:30-10:30PM \t\t\n SUMMARY: Man escapes prison through hope, friendship, and perseverance over decades.",
     "\t\tINCEPTION \t\t\n GENRE: Sci-Fi/Thriller \t\t\n TIMING: 10:30-12:00PM \t\t\n SUMMARY :Thieves plant ideas in dreams, blurring reality with layered subconscious.",
     "\t\tThe Dark Knight \t\t GENRE: Action/Crime/Thriller \t\t\n TIMING: 2:30-4:30PM  \t\t\n SUMMARY: Batman battles Joker in a chaotic fight for Gotham’s soul.",
@@ -553,8 +553,8 @@ int main(){
 			break;
 		}
 				
+	}	
 	}	//switch of main menu ends
-	
 } //int main bracket
 
 
