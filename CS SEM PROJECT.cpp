@@ -75,11 +75,11 @@ void randommovie(){
 
 void recommendmovie(const string &title ,const string &summary ,const string &time){   //RECOMMEND MOVIE
 	int  buy;
-	cout <<"\t\t****************************************************************\n";
+
 	cout <<"\t\t****************************************************************\n";
 	cout <<"\n\t\t\t\t"<<title<<endl;
 	cout <<"\t\t****************************************************************\n";
-	cout <<"\t\t****************************************************************\n";
+	
   cout <<"\t\t\t\t\t\t\t\t\t\t\t\t";
   randomaddsdeal();
 	cout <<"\n\t\t Timing:"<<time<<endl;
@@ -97,11 +97,11 @@ void recommendmovie(const string &title ,const string &summary ,const string &ti
 }
 void moviedetails(const string &title,const string &genre,const string &time,const string  &ratings,const string &summary){    //moviedetailsfunction
 	bool buy;
-	cout <<"\t\t****************************************************************\n";
-    cout <<"\n\t\t========================================================\n";
+	
+        cout <<"\n\t\t========================================================\n";
 	cout <<"\n\n\t\t\t"<<title<<endl;
 	cout <<"\n\t\t========================================================\n";
-	cout <<"\t\t****************************************************************\n";
+	
 	cout <<"\t\t\t\t\t\t\t\t\t\t\t\t ";
 	randomaddsdeal();
 	cout <<"\n\t\t Genre:  "<<genre<<endl;
@@ -124,10 +124,8 @@ void showingtoday(){//funation
 	//system ("CLS");
 	 // system("color 03");
     //time should be here
-    cout <<"\t\t****************************************************************";
-    cout <<"\n\t\t~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
+        cout <<"\t\t****************************************************************";
    	cout <<"\n\n\t\t\t\t SHOWING TODAY\n\n"<<endl;
-   	cout <<"\n\t\t~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
    	cout <<"\t\t****************************************************************";	
    	cout <<"\n\n";
 	cout <<"\t\t\t\t\t\t\t\t\t\t\t\t";
@@ -219,9 +217,7 @@ information();
  	int choice;
 	 do{
 	cout <<"\n\t\t========================================================\n";
-    cout <<"\n\t\t.......................................................\n";
 	cout <<"\n\t\tPOPULAR RELEASE OF 2024"<<endl;
-	cout <<"\n\t\t.......................................................\n";
 	cout <<"\n\t\t========================================================\n";
 	cout <<"\t\t\t\t\t\t\t\t\t\t\t\t";
 	randomaddsdeal();
