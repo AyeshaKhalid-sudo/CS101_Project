@@ -255,6 +255,4 @@ int main(){
 }
 
 
-//getch(); then call function
-//learn file
-//areej and aleena module
+
