@@ -71,7 +71,7 @@ int buy_ticket1(){
 		int tickets, choice1;
 		cout<<"\t\t\t\t Enter number of ticket you would like to purchase : ";
 		cin>>tickets;
-		system("cls");
+		//system("cls");
 		cout<<"\t\t\t\t\t\t Seating Arrangement"<<endl;
 		cout<<endl;
 		cout<<"\t\t\t\t\t      1  2  3  4  5  6  7  8  9  10"<<endl;
