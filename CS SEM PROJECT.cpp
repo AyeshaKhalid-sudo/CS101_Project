@@ -363,7 +363,7 @@ void information(){
 int logindetails(){
 	
 	system("cls");
-	string user_name, pass_word, det1;
+	string user_name, pass_word, password, username;
 	cout<<endl<<endl<<"\t\t\t\t\t Sign in to your account <3 ";
 	cout<<endl<<endl<<"\t\t\t\t Enter your username: ";
 	cin.ignore();
@@ -374,11 +374,13 @@ int logindetails(){
 	getline(cin, pass_word);
 	cout<<endl<<endl<<"\t\t\t\t ";
 	
-	string det=user_name+pass_word;
-	ifstream read("file.txt");
-	getline(read, det1);
+	ifstream read("User.txt");
+	getline(read, username);
+
+	ifstream read1("Pass.txt");
+	getline(read1, password);
 	
-	if(det==det1){
+	if(( user_name== username) && ( pass_word== password )){
 		return 1; 
 	}
 	else{
@@ -447,12 +449,16 @@ int main(){
 						cout<<endl<<endl<<"\t\t\t\t Enter your password: ";
 						getline(cin, password);
 									
-						string det1=username+password;
+
 						cout<<endl<<endl<<"\t\t\t\t ";
 								
-						ofstream details("file.txt");
-						details<<det1;				
-						details.close();
+						ofstream USERname("User.txt");
+						USERname<<username;				
+						USERname.close();
+
+						ofstream PASSword("Pass.txt");
+						PASSword<<password;
+						PASSword.close();
 						cout<<"Sign up completed !"; 
 						main();// go back to main menu
 							
