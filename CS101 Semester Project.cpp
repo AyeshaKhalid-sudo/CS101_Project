@@ -1,4 +1,5 @@
 #include <iostream>
+#include <fstream>
 #include <cstdlib>
 #include <cstring>
 #include <conio.h>
@@ -28,21 +29,23 @@ void info_check(){
 		
 		if(flag2=="Yes"||flag2=="yes"||flag2=="YES"){
 			
-			string name;
+			string name, file_name;
 			cout<<"\t\t\t\t Enter your user name : ";
 			getline(cin,name);				//call aleena file and match
 			cout<<endl;
 			
-		/*	if (name != file name){
+			ifstream read("User.txt");
+			getline(read , file_name);
+			if (name != file_name){
 				
-				cout<<"you need to register or sign up before proceeding !"<<endl;
-				cout<<"Press any key to conyinue :"<<endl;
-				getch();
+				cout<<"\t\t\t\t you need to register or sign up before proceeding !"<<endl;
+				cout<<"\t\t\t\t Press any key to conyinue :"<<endl;
+				getch();        //call main 
 			}
-			else if (name == file name){}*/
+			else if (name == file_name){
 				
 				buy_ticket1();				//call function
-			
+			}
 		}
 		else if(flag2=="NO"||flag2=="No"||flag2=="no"){
 			
@@ -66,7 +69,7 @@ int buy_ticket1(){
 		cout<<endl<<endl;
 		cout<<"\t\t\t\t Please choose your prefered movie :"<<endl<<endl;
 		
-		showingtoday();	
+	//	showingtoday();	
 		
 		int tickets, choice1;
 		cout<<"\t\t\t\t Enter number of ticket you would like to purchase : ";
@@ -123,21 +126,15 @@ int buy_ticket1(){
 }
 int buy_ticket2(){
 	
-	int flag3, choice2;
+	int choice2;
 	double card_mob_num;
-	cout<<endl<<"\t\t\t\t Would you like to add a deal with your ticket ?"<<endl;
-	cout<<endl<<"\t\t\t\t If yes then press 1 and if not then press 0 : ";
-	cin >> flag3;
-	cout<<endl;
-	if(flag3==1){
-		//areej deal function then add to total
-	}
+	
 	cout<<"\t\t\t\t Prefered payment method : "<<endl<<endl;
 	cout<<"\t\t\t\t 1. Easypaisa"<<endl;
 	cout<<"\t\t\t\t 2. Bank Transfer"<<endl;
 	cout<<"\t\t\t\t 3. Pay on spot before the show"<<endl<<endl;
 	cout<<"\t\t\t\t Choose your preference (1-3): ";
-		cin>>choice2;
+	cin>>choice2;
 		
 		switch(choice2){
 		
@@ -229,10 +226,10 @@ void showingtoday() {				//AREEJ
 	       moviedetails("Parasite","Sci-Fi, Thriller","12:30-2:00PM","7/10","Poor family infiltrates rich household, leading to shocking class conflict.");
 			break;
 		case 4:
-	       moviedetails("The Dark Knight","Action, Crime, Thriller","2:30-4:30PM","9/10","Batman battles Joker in a chaotic fight for Gotham’s soul.");
+	       moviedetails("The Dark Knight","Action, Crime, Thriller","2:30-4:30PM","9/10","Batman battles Joker in a chaotic fight for Gothamâ€™s soul.");
 			break;
 		case 5:
-			moviedetails("Forrest Gump"," Drama, Romance","5-6:30PM","8/10","Simple man witnesses history, finding love and purpose through life’s challenges.");
+			moviedetails("Forrest Gump"," Drama, Romance","5-6:30PM","8/10","Simple man witnesses history, finding love and purpose through lifeâ€™s challenges.");
 	      break;
 	    case 0:
 	    	cout <<"\t\t\tExit to main menu"<<endl;
@@ -247,12 +244,12 @@ void showingtoday() {				//AREEJ
  
 }
 
+
 int main(){
 	
 	info_check();
 
 	return 0;
 }
-
 
 
