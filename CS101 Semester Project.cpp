@@ -74,8 +74,10 @@ int buy_ticket1(){
 	   	cout <<"\t\t\t\t 3.Parasite"<<"                   "<<"ratings: 7/10"<<"\t 12:20 PM"<<endl;
 		cout <<"\t\t\t\t 4.The Dark Knight"<<"            "<<"ratings: 9/10"<<"\t 3:30  PM"<<endl;
 		cout <<"\t\t\t\t 5.Forrest Gump"<<"               "<<"ratings: 8/10"<<"\t 5:10  PM"<<endl<<endl<<endl;
-		cout<<"\t\t\t\t Please choose your prefered movie (1-5) : ";
+		cout <<"\t\t\t\t Please choose your prefered movie (1-5) : ";
 		cin >> choice3;
+		cout << endl;
+		cout<<"\t\t\t\t To get more details to the information section in the main menu";
 		cout<<endl<<endl;
 	
 		cout<<"\t\t\t\t Enter number of ticket you would like to purchase : ";
