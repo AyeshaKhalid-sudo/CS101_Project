@@ -77,7 +77,7 @@ int buy_ticket1(){
 		cout <<"\t\t\t\t Please choose your prefered movie (1-5) : ";
 		cin >> choice3;
 		cout << endl;
-		cout<<"\t\t\t\t To get more details to the information section in the main menu";
+		cout<<"\t\t\t\t To get more details go to the information section in the main menu !";
 		cout<<endl<<endl;
 	
 		cout<<"\t\t\t\t Enter number of ticket you would like to purchase : ";
